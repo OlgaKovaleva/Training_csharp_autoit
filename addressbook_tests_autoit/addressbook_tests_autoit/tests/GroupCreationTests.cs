@@ -15,10 +15,10 @@ namespace addressbook_tests_autoit
             {
                 Name = "test"
             };
-            oldList.Add(newGroup);
+
             app.Groups.Add(newGroup);
             List<GroupData> newList = app.Groups.GetGroupsList();
-            
+            oldList.Add(newGroup);
             oldList.Sort();
             newList.Sort();
 
